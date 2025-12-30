@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linuxgroove - Open Source Apps & Linux Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">linuxgroove</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#linux" class="nav-link">Discover Linux</a></li>
+                <li><a href="#apps" class="nav-link">Apps</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="paint-splatter paint-splatter-1"></div>
+        <div class="paint-splatter paint-splatter-2"></div>
+        <div class="paint-splatter paint-splatter-3"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Welcome to the
+                <span class="gradient-text">Open Source</span>
+                Revolution
+            </h1>
+            <p class="hero-subtitle">Discover amazing Linux apps and join the freedom of open source</p>
+            <div class="hero-buttons">
+                <a href="#apps" class="btn btn-primary">Explore Apps</a>
+                <a href="#linux" class="btn btn-secondary">Learn Linux</a>
+            </div>
+        </div>
+        <div class="penguin-container">
+            <div class="penguin-glow"></div>
+        </div>
+    </section>
+
+    <section id="linux" class="linux-intro">
+        <div class="container">
+            <h2 class="section-title">What is <span class="gradient-text">Linux</span>?</h2>
+            <div class="intro-grid">
+                <div class="intro-card">
+                    <div class="card-icon">🐧</div>
+                    <h3>Free & Open Source</h3>
+                    <p>Linux is completely free and its source code is open for anyone to view, modify, and distribute. No hidden costs, no licenses to worry about.</p>
+                </div>
+                <div class="intro-card">
+                    <div class="card-icon">🔒</div>
+                    <h3>Secure & Private</h3>
+                    <p>Built with security in mind. Linux respects your privacy and gives you complete control over your data without tracking or telemetry.</p>
+                </div>
+                <div class="intro-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Fast & Powerful</h3>
+                    <p>Experience blazing fast performance on both old and new hardware. Linux is lightweight and incredibly efficient.</p>
+                </div>
+                <div class="intro-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>Customizable</h3>
+                    <p>Make it yours! From desktop environments to system behavior, everything can be customized to match your workflow.</p>
+                </div>
+                <div class="intro-card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Community Driven</h3>
+                    <p>Join millions of users and developers worldwide. Get help, contribute, and be part of something bigger.</p>
+                </div>
+                <div class="intro-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Always Improving</h3>
+                    <p>Constant updates and improvements from a passionate community. The future is open source.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="apps" class="apps-showcase">
+        <div class="container">
+            <h2 class="section-title">My <span class="gradient-text">Open Source</span> Apps</h2>
+            <p class="section-subtitle">Crafted with passion for the Linux community</p>
+
+            <div class="apps-grid">
+                <!-- Terminal Games -->
+                <div class="app-card">
+                    <div class="app-icon">🎓</div>
+                    <h3>Terminal Fun</h3>
+                    <p class="app-description">A GTK4 application that teaches Linux command line basics through 23 interactive lessons with an embedded terminal emulator. Perfect for beginners!</p>
+                    <div class="app-tags">
+                        <span class="tag">GTK4</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Education</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://github.com/kenvandine/terminal-fun" class="app-link" target="_blank">GitHub</a>
+                        <a href="https://snapcraft.io/terminal-fun" class="app-link" target="_blank">Snap Store</a>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">🃏</div>
+                    <h3>Terminal Solitaire</h3>
+                    <p class="app-description">Classic Klondike Solitaire in your terminal with colorful interface, mouse support, and local high score tracking. Built with Python curses.</p>
+                    <div class="app-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Curses</span>
+                        <span class="tag">Game</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://github.com/kenvandine/terminal-solitaire" class="app-link" target="_blank">GitHub</a>
+                        <a href="https://snapcraft.io/terminal-solitaire" class="app-link" target="_blank">Snap Store</a>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">🎮</div>
+                    <h3>Terminal 2048</h3>
+                    <p class="app-description">The addictive 2048 puzzle game in your terminal! Written in Rust with colorful ANSI graphics and persistent high score tracking.</p>
+                    <div class="app-tags">
+                        <span class="tag">Rust</span>
+                        <span class="tag">Game</span>
+                        <span class="tag">Terminal</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://github.com/kenvandine/terminal-2048" class="app-link" target="_blank">GitHub</a>
+                        <a href="https://snapcraft.io/terminal-2048" class="app-link" target="_blank">Snap Store</a>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">🧱</div>
+                    <h3>Terminal Tetris</h3>
+                    <p class="app-description">Classic Tetris gameplay right in your terminal. Stack blocks, clear lines, and chase high scores in this nostalgic Python implementation.</p>
+                    <div class="app-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Game</span>
+                        <span class="tag">Terminal</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://github.com/kenvandine/terminal-tetris" class="app-link" target="_blank">GitHub</a>
+                        <a href="https://snapcraft.io/terminal-tetris" class="app-link" target="_blank">Snap Store</a>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">⚓</div>
+                    <h3>Battleship</h3>
+                    <p class="app-description">The classic naval combat game in your terminal. Sink your opponent's fleet in this strategic turn-based game.</p>
+                    <div class="app-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Game</span>
+                        <span class="tag">Strategy</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://github.com/kenvandine/battleship" class="app-link" target="_blank">GitHub</a>
+                        <a href="https://snapcraft.io/battleship" class="app-link" target="_blank">Snap Store</a>
+                    </div>
+                </div>
+
+                <!-- AI Desktop Apps -->
+                <div class="app-card">
+                    <div class="app-icon">✨</div>
+                    <h3>Gemini Desktop</h3>
+                    <p class="app-description">Unofficial Electron wrapper for Google's Gemini AI. Native Linux desktop experience for your AI conversations and productivity.</p>
+                    <div class="app-tags">
+                        <span class="tag">Electron</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">AI</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://github.com/kenvandine/gemini-desktop" class="app-link" target="_blank">GitHub</a>
+                        <a href="https://snapcraft.io/gemini-desktop" class="app-link" target="_blank">Snap Store</a>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">🤖</div>
+                    <h3>Copilot Desktop</h3>
+                    <p class="app-description">Unofficial desktop wrapper for Microsoft Copilot. Seamlessly integrate AI assistance into your Linux desktop workflow.</p>
+                    <div class="app-tags">
+                        <span class="tag">Electron</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">AI</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://github.com/kenvandine/copilot-desktop" class="app-link" target="_blank">GitHub</a>
+                        <a href="https://snapcraft.io/copilot-desktop" class="app-link" target="_blank">Snap Store</a>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">🦆</div>
+                    <h3>Duck AI</h3>
+                    <p class="app-description">Unofficial desktop app for DuckDuckGo's Duck.ai. Privacy-focused AI assistance in a native Linux application.</p>
+                    <div class="app-tags">
+                        <span class="tag">Electron</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">AI</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://github.com/kenvandine/duck-ai" class="app-link" target="_blank">GitHub</a>
+                        <a href="https://snapcraft.io/duck-ai" class="app-link" target="_blank">Snap Store</a>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">🧠</div>
+                    <h3>DeepSeek Desktop</h3>
+                    <p class="app-description">Unofficial Electron wrapper for DeepSeek AI. Powerful AI capabilities wrapped in a native Linux desktop application.</p>
+                    <div class="app-tags">
+                        <span class="tag">Electron</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">AI</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://github.com/kenvandine/deepseek-desktop" class="app-link" target="_blank">GitHub</a>
+                        <a href="https://snapcraft.io/deepseek-desktop" class="app-link" target="_blank">Snap Store</a>
+                    </div>
+                </div>
+
+                <div class="app-card">
+                    <div class="app-icon">🔍</div>
+                    <h3>Perplexity Desktop</h3>
+                    <p class="app-description">Unofficial desktop wrapper for Perplexity AI. Advanced search and research capabilities in a native Linux application.</p>
+                    <div class="app-tags">
+                        <span class="tag">Electron</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">AI</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://github.com/kenvandine/perplexity-desktop" class="app-link" target="_blank">GitHub</a>
+                        <a href="https://snapcraft.io/perplexity-desktop" class="app-link" target="_blank">Snap Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+            <p class="section-subtitle">Questions? Ideas? Let's connect!</p>
+            <div class="contact-links">
+                <a href="https://github.com/kenvandine" class="contact-link" target="_blank">
+                    <span class="contact-icon">💻</span>
+                    <span>GitHub</span>
+                </a>
+                <a href="#" class="contact-link">
+                    <span class="contact-icon">📧</span>
+                    <span>Email</span>
+                </a>
+                <a href="#" class="contact-link">
+                    <span class="contact-icon">🐦</span>
+                    <span>Twitter</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 linuxgroove. Open Source & Free Forever.</p>
+            <p class="footer-tagline">Built with ❤️ for the Linux community</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
