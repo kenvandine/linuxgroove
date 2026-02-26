@@ -73,6 +73,7 @@ document.querySelectorAll('.intro-card, .app-card').forEach(card => {
     observer.observe(card);
 });
 
+/*
 // Add rainbow trail effect to cursor (optional fun feature)
 const colors = ['#FF1B8D', '#A855F7', '#3B82F6', '#06B6D4', '#14B8A6', '#10B981', '#F59E0B'];
 let colorIndex = 0;
@@ -113,6 +114,7 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+*/
 
 // Parallax effect for paint splatters
 window.addEventListener('scroll', () => {
