@@ -1,313 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>linuxgroove - Open Source Apps & Linux Introduction</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LinuxGroove Games: free and open source games, Linux first</title>
+<meta name="description" content="Indie games that are free forever, open source to the last line, built on Linux first and made for everyone. Play Verdigris Protocol, Graveyard Hollow, Block Party: Skyway and Foam Frenzy.">
+<meta name="theme-color" content="#0b0a10">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://linuxgroove.com/">
+<meta property="og:title" content="LinuxGroove Games">
+<meta property="og:description" content="Indie games that are free forever, open source and built on Linux first, for everyone.">
+<meta property="og:image" content="https://linuxgroove.com/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/saira-stencil-one.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/sedgwick-ave-display.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">linuxgroove</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#linux" class="nav-link">Discover Linux</a></li>
-                <li><a href="#apps" class="nav-link">Apps</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="https://trends.linuxgroove.com" target=_blank class="nav-link">Trends</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+<a class="skip" href="#main">Skip to the games</a>
+
+<header class="bar">
+  <a class="brand" href="#top" aria-label="LinuxGroove Games, back to the top">
+    <img src="assets/img/penguin-192.png" alt="" width="96" height="96">
+    <svg viewBox="0 0 640 380" aria-hidden="true">
+      <defs>
+        <linearGradient id="spray" gradientUnits="userSpaceOnUse" x1="60" y1="60" x2="600" y2="300">
+          <stop offset="0" stop-color="#ff2d95"/><stop offset=".35" stop-color="#ff6a1a"/><stop offset=".6" stop-color="#ffd21f"/><stop offset="1" stop-color="#7be33a"/>
+        </linearGradient>
+        <filter id="glow" x="-20%" y="-40%" width="140%" height="180%"><feGaussianBlur stdDeviation="12"/></filter>
+        <g id="tag" font-family="Sedgwick Ave Display" font-size="168" text-anchor="middle"><text x="290" y="150">Linux</text><text x="320" y="292">Groove</text></g>
+      </defs>
+      <g transform="rotate(-6 320 190)">
+        <use href="#tag" fill="#8b3dff" stroke="#8b3dff" stroke-width="40" stroke-linejoin="round" filter="url(#glow)" opacity=".55"/>
+        <use href="#tag" fill="#0b0a10" stroke="#0b0a10" stroke-width="20" stroke-linejoin="round"/>
+        <g stroke-linecap="round"><path d="M166 132v40M268 140v52M420 268v46M520 262v30" stroke="#fff" stroke-width="8"/><path d="M166 132v38M268 140v50M420 268v44M520 262v28" stroke="#ff6a1a" stroke-width="4"/></g>
+        <use href="#tag" fill="#fff" stroke="#fff" stroke-width="9" stroke-linejoin="round"/>
+        <use href="#tag" fill="url(#spray)"/>
+        <text x="330" y="360" text-anchor="middle" font-family="Saira Stencil One" font-size="46" letter-spacing="22" fill="#e9fbff">GAMES</text>
+      </g>
+    </svg>
+  </a>
+  <nav aria-label="Sections">
+    <a href="#games">Games</a>
+    <a href="#why">Why free</a>
+    <a href="#ideas">Ideas</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="bill" id="top" aria-labelledby="vp-title">
+  <picture>
+    <source media="(max-width: 700px)" srcset="assets/img/vp-hero-900.jpg">
+    <img class="bg" src="assets/img/vp-hero.jpg" width="1415" height="753" alt="A plasma cutter's beam burning into the Heart of the Bloom, deep in the Core of Marigold Station">
+  </picture>
+
+  <svg class="scrawl" viewBox="0 0 320 170" aria-hidden="true">
+    <defs><filter id="mist" x="-20%" y="-40%" width="140%" height="180%"><feGaussianBlur stdDeviation="8"/></filter></defs>
+    <g font-family="Permanent Marker" font-size="96" text-anchor="middle">
+      <text x="160" y="110" fill="#ff2d95" filter="url(#mist)" opacity=".7">FREE!</text>
+      <text x="160" y="110" fill="#fff">FREE!</text>
+    </g>
+    <path d="M70 116v30M128 118v40M236 116v24" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+    <path d="M40 140c60 10 170 12 250-4" stroke="#ffd21f" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </svg>
+
+  <div class="copy">
+    <p class="kicker"><span class="new">New</span>First person horror · 1 player</p>
+    <h1 id="vp-title">Verdigris <span>Protocol</span></h1>
+    <p class="line">The alien isn't aboard Marigold Station. It's growing through it. Burn back the Bloom deck by deck, cut the power it feeds on and dig out its Heart before it takes the whole crew.</p>
+    <p class="note">Gore can be turned down or off, and comfort settings keep the camera calm.</p>
+    <div class="cta">
+      <a class="btn go" href="https://snapcraft.io/verdigris-protocol">Get it on Linux <small>Snap Store</small></a>
+      <a class="btn" href="https://github.com/LinuxGroove/verdigris-protocol/releases/latest">Windows<span class="vh"> download</span></a>
+      <a class="btn" href="https://github.com/LinuxGroove/verdigris-protocol/releases/latest">macOS<span class="vh"> download</span></a>
+      <a class="src" href="https://github.com/LinuxGroove/verdigris-protocol">Source code on GitHub <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+
+  <ul class="filmstrip" aria-label="Verdigris Protocol screenshots">
+    <li><a href="assets/img/vp-the-nest.jpg" data-view><img src="assets/img/vp-the-nest-thumb.jpg" width="480" height="270" alt="The nest: crew quarters overgrown by the Bloom"></a></li>
+    <li><a href="assets/img/vp-the-taken.jpg" data-view><img src="assets/img/vp-the-taken-thumb.jpg" width="480" height="270" alt="The Taken: crew members the Bloom has claimed, coming down a corridor"></a></li>
+    <li><a href="assets/img/vp-cargo-bay.jpg" data-view><img src="assets/img/vp-cargo-bay-thumb.jpg" width="480" height="270" alt="The cargo bay, with a pulse rifle and creatures in the dark"></a></li>
+    <li><a href="assets/img/vp-the-ring.jpg" data-view><img src="assets/img/vp-the-ring-thumb.jpg" width="480" height="270" alt="The ring map: every deck of Marigold Station and the hours each has left"></a></li>
+  </ul>
+</section>
+
+<section class="manifesto" id="why" aria-labelledby="why-title">
+  <h2 id="why-title" class="big">We make indie games that are <span class="hl" style="--c: var(--pink)">free forever</span>, <span class="hl" style="--c: var(--yellow)">open source</span> to the last line, built on <span class="hl" style="--c: var(--cyan)">Linux first</span> and made for <span class="hl" style="--c: var(--green)">everyone</span>.</h2>
+  <div class="cols">
+    <div style="--c: var(--pink)"><h3>No catch</h3><p>No price, no ads and no loot boxes. Not now and not later.</p></div>
+    <div style="--c: var(--yellow)"><h3>Read the code</h3><p>Every line of every game is on GitHub. Read it, change it, learn from it and build your own.</p></div>
+    <div style="--c: var(--cyan)"><h3>Linux first, not only</h3><p>We build and test on Linux and ship there first. Every game comes to Windows and macOS too.</p></div>
+    <div style="--c: var(--green)"><h3>Room for everyone</h3><p>Controller or keyboard, online or offline, friends or bots. Comfort settings and plain words. Whoever you are, you're welcome here.</p></div>
+  </div>
+</section>
+
+<section id="games" aria-labelledby="games-title">
+  <div class="label"><h2 id="games-title">More to play tonight</h2><p>Finished, free and ready to download.</p></div>
+  <div class="games">
+    <article class="box gh">
+      <img src="assets/img/gh-tile.jpg" width="720" height="960" loading="lazy" alt="Lamplighters by the village fountain at night, lanterns glowing">
+      <p class="kind">Social deduction · 4 to 10 players</p>
+      <h3>Graveyard Hollow</h3>
+      <p>Keep the village lanterns lit until dawn while a friend blows them out. Play on your network, online, or fill the empty seats with bots.</p>
+      <p class="links">
+        <a class="get" href="https://snapcraft.io/graveyard-hollow">Get it free<span class="vh"> on the Snap Store</span></a>
+        <a href="https://github.com/LinuxGroove/graveyard-hollow/releases/latest">Windows<span class="vh"> download for Graveyard Hollow</span></a>
+        <a href="https://github.com/LinuxGroove/graveyard-hollow/releases/latest">macOS<span class="vh"> download for Graveyard Hollow</span></a>
+        <a href="https://github.com/LinuxGroove/graveyard-hollow">Source<span class="vh"> code for Graveyard Hollow</span></a>
+      </p>
+    </article>
+    <article class="box bp">
+      <img src="assets/img/bp-tile.jpg" width="720" height="960" loading="lazy" alt="The astronaut beside a Christmas tree in Frosty Peaks">
+      <p class="kind">3D platformer · 1 player</p>
+      <h3>Block Party: Skyway</h3>
+      <p>Explore a chain of floating islands at your own pace, find the stars, then race every course against your own ghost.</p>
+      <p class="links">
+        <a class="get" href="https://snapcraft.io/block-party-skyway">Get it free<span class="vh"> on the Snap Store</span></a>
+        <a href="https://github.com/LinuxGroove/block-party-skyway/releases/latest">Windows<span class="vh"> download for Block Party: Skyway</span></a>
+        <a href="https://github.com/LinuxGroove/block-party-skyway/releases/latest">macOS<span class="vh"> download for Block Party: Skyway</span></a>
+        <a href="https://github.com/LinuxGroove/block-party-skyway">Source<span class="vh"> code for Block Party: Skyway</span></a>
+      </p>
+    </article>
+    <article class="box ff">
+      <img src="assets/img/ff-tile.jpg" width="720" height="960" loading="lazy" alt="Campers dodging foam darts in the gym">
+      <p class="kind">Party shooter · 1 to 8 players</p>
+      <h3>Foam Frenzy</h3>
+      <p>Foam dart battles for up to eight friends: four on one couch and the rest over the network.</p>
+      <p class="links">
+        <a class="get" href="https://snapcraft.io/foam-frenzy">Get it free<span class="vh"> on the Snap Store</span></a>
+        <a href="https://github.com/LinuxGroove/foam-frenzy/releases/latest">Windows<span class="vh"> download for Foam Frenzy</span></a>
+        <a href="https://github.com/LinuxGroove/foam-frenzy/releases/latest">macOS<span class="vh"> download for Foam Frenzy</span></a>
+        <a href="https://github.com/LinuxGroove/foam-frenzy">Source<span class="vh"> code for Foam Frenzy</span></a>
+      </p>
+    </article>
+  </div>
+
+  <div class="soon" aria-label="Coming soon">
+    <article class="reel">
+      <img src="assets/img/rd-reel.jpg" width="1280" height="549" loading="lazy" alt="">
+      <div>
+        <p class="cs">Coming soon</p>
+        <h3>Race Day</h3>
+        <p>Grand prix racing for 1 to 8 players. Twenty cars, sixteen circuits and five red lights.</p>
+        <a href="https://github.com/LinuxGroove/race-day">Watch it being built<span class="vh"> on GitHub</span> <span aria-hidden="true">→</span></a>
+      </div>
+      <span class="wet" aria-hidden="true">wet paint!</span>
+    </article>
+    <article class="reel">
+      <img src="assets/img/tt-reel.jpg" width="1280" height="549" loading="lazy" alt="">
+      <div>
+        <p class="cs">Coming soon</p>
+        <h3>Tiptoe</h3>
+        <p>A sneaky first person game about putting things back. A cat burglar in reverse.</p>
+        <a href="https://github.com/LinuxGroove/tiptoe">Watch it being built<span class="vh"> on GitHub</span> <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="ideas" id="ideas" aria-labelledby="ideas-title">
+  <h2 id="ideas-title">Idea board</h2>
+  <ul class="chips">
+    <li>Ashen Vigil</li><li>Moonpatch Farm</li><li>Burn Rate</li><li>Starship Shift</li><li>Groove Zoo</li>
+    <li class="you">Your idea, soon</li>
+  </ul>
+  <p>What we might make next. Soon you'll be able to send us yours.</p>
+</section>
+</main>
+
+<footer id="about">
+  <div class="made">
+    <p class="by">Made by</p>
+    <p class="names">Drew, Kaden &amp; Ken VanDine</p>
+    <p class="about">LinuxGroove Games is a small family team making the games we want to play, then giving them away with the code.</p>
+  </div>
+  <img class="peng" src="assets/img/penguin.png" width="512" height="512" loading="lazy" alt="">
+  <div class="fine">
+    <span>© 2025–2026 The LinuxGroove team</span>
+    <nav aria-label="Elsewhere">
+      <a href="https://github.com/LinuxGroove">GitHub</a>
+      <a href="https://ubuntu.social/@kenvandine">Mastodon</a>
+      <a href="https://trends.linuxgroove.com">Trends</a>
+      <a href="https://github.com/kenvandine/linuxgroove">This site's source</a>
     </nav>
+  </div>
+</footer>
 
-    <section id="home" class="hero">
-        <div class="paint-splatter paint-splatter-1"></div>
-        <div class="paint-splatter paint-splatter-2"></div>
-        <div class="paint-splatter paint-splatter-3"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">
-                Welcome to the
-                <span class="gradient-text">Open Source</span>
-                Revolution
-            </h1>
-            <p class="hero-subtitle">Discover amazing Linux apps and join the freedom of open source</p>
-            <div class="hero-buttons">
-                <a href="#apps" class="btn btn-primary">Explore Apps</a>
-                <a href="#linux" class="btn btn-secondary">Learn Linux</a>
-            </div>
-        </div>
-        <div class="penguin-container">
-            <div class="penguin-glow"></div>
-        </div>
-    </section>
+<dialog class="viewer" id="viewer" aria-label="Verdigris Protocol screenshots">
+  <button class="close" type="button" aria-label="Close">×</button>
+  <figure>
+    <img alt="">
+    <figcaption></figcaption>
+  </figure>
+  <button class="prev" type="button" aria-label="Previous screenshot">‹</button>
+  <button class="next" type="button" aria-label="Next screenshot">›</button>
+</dialog>
 
-    <section id="linux" class="linux-intro">
-        <div class="container">
-            <h2 class="section-title">What is <span class="gradient-text">Linux</span>?</h2>
-            <div class="intro-grid">
-                <div class="intro-card">
-                    <div class="card-icon">🐧</div>
-                    <h3>Free & Open Source</h3>
-                    <p>Linux is completely free and its source code is open for anyone to view, modify, and distribute. No hidden costs, no licenses to worry about.</p>
-                </div>
-                <div class="intro-card">
-                    <div class="card-icon">🔒</div>
-                    <h3>Secure & Private</h3>
-                    <p>Built with security in mind. Linux respects your privacy and gives you complete control over your data without tracking or telemetry.</p>
-                </div>
-                <div class="intro-card">
-                    <div class="card-icon">⚡</div>
-                    <h3>Fast & Powerful</h3>
-                    <p>Experience blazing fast performance on both old and new hardware. Linux is lightweight and incredibly efficient.</p>
-                </div>
-                <div class="intro-card">
-                    <div class="card-icon">🎨</div>
-                    <h3>Customizable</h3>
-                    <p>Make it yours! From desktop environments to system behavior, everything can be customized to match your workflow.</p>
-                </div>
-                <div class="intro-card">
-                    <div class="card-icon">🌍</div>
-                    <h3>Community Driven</h3>
-                    <p>Join millions of users and developers worldwide. Get help, contribute, and be part of something bigger.</p>
-                </div>
-                <div class="intro-card">
-                    <div class="card-icon">🚀</div>
-                    <h3>Always Improving</h3>
-                    <p>Constant updates and improvements from a passionate community. The future is open source.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="apps" class="apps-showcase">
-        <div class="container">
-            <h2 class="section-title">My <span class="gradient-text">Open Source</span> Apps</h2>
-            <p class="section-subtitle">Crafted with passion for the Linux community</p>
-
-            <div class="apps-grid">
-                <!-- Terminal Games -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <img src="assets/app-icons/terminal-fun.png" alt="Terminal Fun icon">
-                    </div>
-                    <h3>Terminal Fun</h3>
-                    <p class="app-description">A GTK4 application that teaches Linux command line basics through 23 interactive lessons with an embedded terminal emulator. Perfect for beginners!</p>
-                    <div class="app-tags">
-                        <span class="tag">GTK4</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">Education</span>
-                    </div>
-                    <div class="app-links">
-                        <a href="https://github.com/kenvandine/terminal-fun" class="app-link" target="_blank">GitHub</a>
-                        <a href="https://snapcraft.io/terminal-fun" class="app-link" target="_blank">Snap Store</a>
-                    </div>
-                </div>
-
-                <div class="app-card">
-                    <div class="app-icon">
-                        <img src="assets/app-icons/terminal-solitaire.png" alt="Terminal Solitaire icon">
-                    </div>
-                    <h3>Terminal Solitaire</h3>
-                    <p class="app-description">Classic Klondike Solitaire in your terminal with colorful interface, mouse support, and local high score tracking. Built with Python curses.</p>
-                    <div class="app-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Curses</span>
-                        <span class="tag">Game</span>
-                    </div>
-                    <div class="app-links">
-                        <a href="https://github.com/kenvandine/terminal-solitaire" class="app-link" target="_blank">GitHub</a>
-                        <a href="https://snapcraft.io/terminal-solitaire" class="app-link" target="_blank">Snap Store</a>
-                    </div>
-                </div>
-
-                <div class="app-card">
-                    <div class="app-icon">
-                        <img src="assets/app-icons/terminal-2048.png" alt="Terminal 2048 icon">
-                    </div>
-                    <h3>Terminal 2048</h3>
-                    <p class="app-description">The addictive 2048 puzzle game in your terminal! Written in Rust with colorful ANSI graphics and persistent high score tracking.</p>
-                    <div class="app-tags">
-                        <span class="tag">Rust</span>
-                        <span class="tag">Game</span>
-                        <span class="tag">Terminal</span>
-                    </div>
-                    <div class="app-links">
-                        <a href="https://github.com/kenvandine/terminal-2048" class="app-link" target="_blank">GitHub</a>
-                        <a href="https://snapcraft.io/terminal-2048" class="app-link" target="_blank">Snap Store</a>
-                    </div>
-                </div>
-
-                <div class="app-card">
-                    <div class="app-icon">
-                        <img src="assets/app-icons/terminal-tetris.png" alt="Terminal Tetris icon">
-                    </div>
-                    <h3>Terminal Tetris</h3>
-                    <p class="app-description">Classic Tetris gameplay right in your terminal. Stack blocks, clear lines, and chase high scores in this nostalgic Python implementation.</p>
-                    <div class="app-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Game</span>
-                        <span class="tag">Terminal</span>
-                    </div>
-                    <div class="app-links">
-                        <a href="https://github.com/kenvandine/terminal-tetris" class="app-link" target="_blank">GitHub</a>
-                        <a href="https://snapcraft.io/terminal-tetris" class="app-link" target="_blank">Snap Store</a>
-                    </div>
-                </div>
-
-                <div class="app-card">
-                    <div class="app-icon">⚓</div>
-                    <h3>Battleship</h3>
-                    <p class="app-description">The classic naval combat game in your terminal. Sink your opponent's fleet in this strategic turn-based game.</p>
-                    <div class="app-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Game</span>
-                        <span class="tag">Strategy</span>
-                    </div>
-                    <div class="app-links">
-                        <a href="https://github.com/kenvandine/battleship" class="app-link" target="_blank">GitHub</a>
-                        <a href="https://snapcraft.io/battleship" class="app-link" target="_blank">Snap Store</a>
-                    </div>
-                </div>
-
-                <!-- AI Desktop Apps -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <img src="assets/app-icons/gemini-desktop.png" alt="Gemini Desktop icon">
-                    </div>
-                    <h3>Gemini Desktop</h3>
-                    <p class="app-description">Unofficial Electron wrapper for Google's Gemini AI. Native Linux desktop experience for your AI conversations and productivity.</p>
-                    <div class="app-tags">
-                        <span class="tag">Electron</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">AI</span>
-                    </div>
-                    <div class="app-links">
-                        <a href="https://github.com/kenvandine/gemini-desktop" class="app-link" target="_blank">GitHub</a>
-                        <a href="https://snapcraft.io/gemini-desktop" class="app-link" target="_blank">Snap Store</a>
-                    </div>
-                </div>
-
-                <div class="app-card">
-                    <div class="app-icon">
-                        <img src="assets/app-icons/copilot-desktop.png" alt="Copilot Desktop icon">
-                    </div>
-                    <h3>Copilot Desktop</h3>
-                    <p class="app-description">Unofficial desktop wrapper for Microsoft Copilot. Seamlessly integrate AI assistance into your Linux desktop workflow.</p>
-                    <div class="app-tags">
-                        <span class="tag">Electron</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">AI</span>
-                    </div>
-                    <div class="app-links">
-                        <a href="https://github.com/kenvandine/copilot-desktop" class="app-link" target="_blank">GitHub</a>
-                        <a href="https://snapcraft.io/copilot-desktop" class="app-link" target="_blank">Snap Store</a>
-                    </div>
-                </div>
-
-                <div class="app-card">
-                    <div class="app-icon">
-                        <img src="assets/app-icons/duck-ai.png" alt="Duck AI icon">
-                    </div>
-                    <h3>Duck AI</h3>
-                    <p class="app-description">Unofficial desktop app for DuckDuckGo's Duck.ai. Privacy-focused AI assistance in a native Linux application.</p>
-                    <div class="app-tags">
-                        <span class="tag">Electron</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">AI</span>
-                    </div>
-                    <div class="app-links">
-                        <a href="https://github.com/kenvandine/duck-ai" class="app-link" target="_blank">GitHub</a>
-                        <a href="https://snapcraft.io/duck-ai" class="app-link" target="_blank">Snap Store</a>
-                    </div>
-                </div>
-
-                <div class="app-card">
-                    <div class="app-icon">
-                        <img src="assets/app-icons/deepseek-desktop.png" alt="DeepSeek Desktop icon">
-                    </div>
-                    <h3>DeepSeek Desktop</h3>
-                    <p class="app-description">Unofficial Electron wrapper for DeepSeek AI. Powerful AI capabilities wrapped in a native Linux desktop application.</p>
-                    <div class="app-tags">
-                        <span class="tag">Electron</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">AI</span>
-                    </div>
-                    <div class="app-links">
-                        <a href="https://github.com/kenvandine/deepseek-desktop" class="app-link" target="_blank">GitHub</a>
-                        <a href="https://snapcraft.io/deepseek-desktop" class="app-link" target="_blank">Snap Store</a>
-                    </div>
-                </div>
-
-                <div class="app-card">
-                    <div class="app-icon">
-                        <img src="assets/app-icons/perplexity-desktop.png" alt="Perplexity Desktop icon">
-                    </div>
-                    <h3>Perplexity Desktop</h3>
-                    <p class="app-description">Unofficial desktop wrapper for Perplexity AI. Advanced search and research capabilities in a native Linux application.</p>
-                    <div class="app-tags">
-                        <span class="tag">Electron</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">AI</span>
-                    </div>
-                    <div class="app-links">
-                        <a href="https://github.com/kenvandine/perplexity-desktop" class="app-link" target="_blank">GitHub</a>
-                        <a href="https://snapcraft.io/perplexity-desktop" class="app-link" target="_blank">Snap Store</a>
-                    </div>
-                </div>
-
-                <div class="app-card">
-                    <div class="app-icon">
-                        <img src="assets/app-icons/proton-lumo-ai.png" alt="Proton Lumo AI icon">
-                    </div>
-                    <h3>Proton Lumo AI</h3>
-                    <p class="app-description">Unofficial Electron wrapper for Proton's Lumo AI. Brings Proton's AI assistant to Linux as a native desktop experience.</p>
-                    <div class="app-tags">
-                        <span class="tag">Electron</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">AI</span>
-                    </div>
-                    <div class="app-links">
-                        <a href="https://github.com/kenvandine/proton-lumo-ai" class="app-link" target="_blank">GitHub</a>
-                        <a href="https://snapcraft.io/proton-lumo-ai" class="app-link" target="_blank">Snap Store</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
-            <p class="section-subtitle">Questions? Ideas? Let's connect!</p>
-            <div class="contact-links">
-                <a href="https://github.com/kenvandine" class="contact-link" target="_blank">
-                    <span class="contact-icon">💻</span>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://ubuntu.social/@kenvandine" class="contact-link">
-                    <span class="contact-icon">🦣</span>
-                    <span>Mastodon</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025-2026 linuxgroove. Open Source & Free Forever.</p>
-            <p class="footer-tagline">Built with ❤️ for the Linux community</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-    <script defer src="https://outstanding-copperhead.pikapod.net/script.js" data-website-id="4496f2dc-3ddc-4294-97d1-399621eaf40f"></script>
+<script src="script.js" defer></script>
+<script defer src="https://outstanding-copperhead.pikapod.net/script.js" data-website-id="4496f2dc-3ddc-4294-97d1-399621eaf40f"></script>
 </body>
 </html>
